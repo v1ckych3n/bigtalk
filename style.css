@@ -2,16 +2,13 @@
 
 .pipeRecordRTC{
 	position: relative;
-	text-align:center;
+	text-align: center;
 
 
     /* testing the styling */
     display: flex;
-    flex-direction: column;
+    flex-direction: row; 
     column-gap: 2rem;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 
 .pipeRecordRTC span{
@@ -24,6 +21,8 @@
 	font-family:sans-serif;
 	font-size:18px;
 	cursor: pointer;
+
+    
 }
 
 .pipeStartUploading {
