@@ -3,6 +3,15 @@
 .pipeRecordRTC{
 	position: relative;
 	text-align:center;
+
+
+    /* testing the styling */
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .pipeRecordRTC span{
