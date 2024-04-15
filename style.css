@@ -10,11 +10,6 @@
     column-gap: 2rem;
 }
 
-#pipeStartRecording-custom-id {
-	font-size: 32px;
-	color: tomato;
-}
-
 .pipeRecordRTC span{
 	position:absolute;
 	margin: 0;
