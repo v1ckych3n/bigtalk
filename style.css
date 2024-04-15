@@ -4,7 +4,6 @@
 	position: relative;
 	text-align: center;
 
-
     /* testing the styling */
     display: flex;
     flex-direction: row; 
@@ -22,7 +21,7 @@
 	font-size:18px;
 	cursor: pointer;
 
-    
+
 }
 
 .pipeStartUploading {
