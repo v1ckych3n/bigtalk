@@ -2788,34 +2788,34 @@ function replaceCssHref(targetCss, newCss) {
           return `${valueInGiB.toFixed(1)}GiB`;
         }
       };
-  /
-      // /**
-      //  * Adds an icon at the beginning (left) of the timer.
-      //  * @param {String} type - The type of icon to add: "REC", "PLAY", "PAUSE", "NONE";
-      //  * @function
-      //  */
-      // const addIconToTimer = type => {
-      //   const timerToUpdate = document.getElementById("pipeCounter-" + pipeElement);
-      //   const possibleIcons = new Set(["REC", "PLAY", "PAUSE", "NONE"]);
-      //   const pipeTimerIcon = document.getElementById("pipeTimerIcon-" + pipeElement);
-      //   if (!timerToUpdate || !pipeTimerIcon || !type || !possibleIcons.has(type)) return;
+
+      /**
+       * Adds an icon at the beginning (left) of the timer.
+       * @param {String} type - The type of icon to add: "REC", "PLAY", "PAUSE", "NONE";
+       * @function
+       */
+      const addIconToTimer = type => {
+        const timerToUpdate = document.getElementById("pipeCounter-" + pipeElement);
+        const possibleIcons = new Set(["REC", "PLAY", "PAUSE", "NONE"]);
+        const pipeTimerIcon = document.getElementById("pipeTimerIcon-" + pipeElement);
+        if (!timerToUpdate || !pipeTimerIcon || !type || !possibleIcons.has(type)) return;
   
-      //   switch (type) {
-      //     case "REC":
-      //       pipeTimerIcon.innerHTML = '<div class="pipeRecIcon"></div>';
-      //       break;
-      //     case "PLAY":
-      //       pipeTimerIcon.innerHTML = '<div class="pipePlayIcon"></div>';
-      //       break;
-      //     case "PAUSE":
-      //       pipeTimerIcon.innerHTML = '<div class="pipePauseIcon"></div>';
-      //       break;
-      //     case "NONE":
-      //     default:
-      //       pipeTimerIcon.innerHTML = "";
-      //       break;
-      //   }
-      // };
+        switch (type) {
+          case "REC":
+            pipeTimerIcon.innerHTML = '<div class="pipeRecIcon"></div>';
+            break;
+          case "PLAY":
+            pipeTimerIcon.innerHTML = '<div class="pipePlayIcon"></div>';
+            break;
+          case "PAUSE":
+            pipeTimerIcon.innerHTML = '<div class="pipePauseIcon"></div>';
+            break;
+          case "NONE":
+          default:
+            pipeTimerIcon.innerHTML = "";
+            break;
+        }
+      };
   
       /**
        * Updates the timer and applies the appropriate styling.
