@@ -2798,8 +2798,17 @@ function replaceCssHref(targetCss, newCss) {
         const timerToUpdate = document.getElementById("pipeCounter-" + pipeElement);
         const possibleIcons = new Set(["REC", "PLAY", "PAUSE", "NONE"]);
         const pipeTimerIcon = document.getElementById("pipeTimerIcon-" + pipeElement);
+        const popup = document.getElementById('recordingPopup'); // Get the popup element
+
         if (!timerToUpdate || !pipeTimerIcon || !type || !possibleIcons.has(type)) return;
-  
+
+          
+      // Show or hide the recording popup based on the type
+      if (type === "REC") {
+        popup.style.display = 'block'; // Show the popup when the type is REC
+      } else {
+        popup.style.display = 'none'; // Hide the popup when the type is not REC
+      }
         switch (type) {
           case "REC":
             pipeTimerIcon.innerHTML = '<div class="pipeRecIcon"></div>';
